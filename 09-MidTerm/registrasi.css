@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+        linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url('uploads/gedung_sipil.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.container {
+    background: rgba(173, 216, 230, 0.75); 
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 420px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.6s ease-in-out;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px #2980b9;
+    outline: none;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    color: #2c3e50;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #444;
+    font-style: italic;
+}
+
+.result-box {
+    background: rgba(173, 216, 230, 0.75);
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    text-align: center;
+    animation: slideUp 0.6s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.result-box h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.result-box .info {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.result-box .info p {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #2c3e50;
+}
+
+.result-box img {
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #2980b9;
+}
+
+.result-box .thankyou {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f5f85;
+    font-style: italic;
+}
+
+.result-box a {
+    display: inline-block;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.result-box a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
+}
